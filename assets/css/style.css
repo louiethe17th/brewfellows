@@ -28,13 +28,13 @@ nav {
     background: none;
     border: none;
     font-size: 18px;
+
 }
 
 .menu-content {
     display: none;
     position: absolute;
     min-width: 160px;
-    background-color: #379683;
     z-index: 1;
 }
 
@@ -42,6 +42,11 @@ nav {
     display: block;
     text-decoration: none;
     padding: 10px 15px;
+    color: #05386B;
+}
+
+.menu-content a:hover {
+    color: white;
 }
 
 .show {
