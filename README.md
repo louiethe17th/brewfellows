@@ -14,3 +14,9 @@ Dark Green: #379683
 Green: #5CDB95
 Light Green: #8EE4AF
 Tan: #EDF5E1
+
+# Credits and Acknowledgements
+
+All beers and logos, are copyright to their owners and creators. We do not claim to be the creators of these wonderful works of art, but do encourage you to go out and try them!
+
+# Changelog
