@@ -26,7 +26,7 @@ All beers and logos, are copyright to their owners and creators. We do not claim
 Beer list
 Ale: Gerogetown brewing Mannys Pale Ale, https://www.beeradvocate.com/beer/profile/4378/12645/
 
-Sour: Old Stove Brewing Blackberry Soud, https://www.beeradvocate.com/beer/profile/45210/291795/
+Sour: Old Stove Brewing Blackberry Sour, https://www.beeradvocate.com/beer/profile/45210/291795/
 
 Red Ale: Stoup NW Red, https://www.beeradvocate.com/beer/profile/33525/107905/
 
@@ -38,7 +38,7 @@ IPA: Black Raven Trickster IPA, https://www.beeradvocate.com/beer/profile/19765/
 
 Saison: Holy Mountain Brewing The Seer, https://www.beeradvocate.com/beer/profile/36949/140143/
 
-PIlsner: Icicle Brewing Crosscut Pilsner, https://www.beeradvocate.com/beer/profile/25393/108953/
+Pilsner: Icicle Brewing Crosscut Pilsner, https://www.beeradvocate.com/beer/profile/25393/108953/
 
 Cider: Seattle Cider Company Basil Mint Cider, https://www.seattlecidercompany.com/
 
