@@ -1,0 +1,49 @@
+/* --------color guide--------- */
+
+/* dark blue: #05386B
+dark green: #379683
+green: #5CDB95
+light green: #8EE4AF
+tan: #EDF5E1 */
+
+/* global styling */
+
+body {
+    background-color: #5CDB95;
+}
+
+/* navbar */
+
+nav {
+    width: 100%;
+    padding: 10px;
+}
+
+.drop-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: #379683;
+    z-index: 1;
+}
+
+.menu-content a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.show {
+    display: block;
+}
