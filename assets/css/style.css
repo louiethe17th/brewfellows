@@ -1,0 +1,138 @@
+/* --------color guide--------- */
+
+/* dark blue: #05386B
+dark green: #379683
+green: #5CDB95
+light green: #8EE4AF
+tan: #EDF5E1 */
+
+/* global styling */
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+body {
+    background-color: #5CDB95;
+}
+
+
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+a {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* navbar */
+
+nav {
+    width: 100%;
+    padding: 10px;
+}
+
+.drop-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    padding: 5px;
+    z-index: 1;
+    background-color: #EDF5E1;
+}
+
+.menu-content a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #05386B;
+}
+
+.menu-content a:hover {
+    background-color: #05386B;
+    color: #EDF5E1;
+}
+
+.show {
+    display: block;
+}
+
+/* main styling */
+
+main {
+    padding: 30px 0px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    animation: fadein 2s;
+}
+
+main h1 {
+    margin-top: 10px;
+    font-size: 36px;
+    text-align: center;
+    color: #05386B;
+    animation: fadein 3s;
+}
+
+main h3 {
+    margin-top: 10px;
+    font-size: 22px;
+    text-align: center;
+    color: #EDF5E1;
+    animation: fadein 4s;
+}
+
+main p {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #444;
+    animation: fadein 6s;
+}
+
+main a {
+    margin-top: 5px;
+    color: white;
+    background-color: #05386B;
+    padding: 5px;
+    text-decoration: none;
+    animation: fadein 6s;
+}
+
+main a:hover {
+    background-color: #05386B;
+    color: #EDF5E1;
+}
+
+footer p {
+    margin-top: 30px;
+    text-align: center;
+}
