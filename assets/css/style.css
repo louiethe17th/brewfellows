@@ -49,7 +49,7 @@ nav {
     background: none;
     border: none;
     font-size: 18px;
-
+    color: #05386B;
 }
 
 .menu-content {
@@ -103,7 +103,7 @@ main h1 {
 
 main h3 {
     margin-top: 10px;
-    font-size: 22px;
+    font-size: 30px;
     text-align: center;
     color: #EDF5E1;
     animation: fadein 4s;
