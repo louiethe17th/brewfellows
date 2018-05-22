@@ -19,6 +19,9 @@ Tan: #EDF5E1
 
 All beers and logos, are copyright to their owners and creators. We do not claim to be the creators of these wonderful works of art, but do encourage you to go out and try them!
 
+Icon library - Font-Awesome 4.7.0
+Fonts - Google Fonts
+
 # Changelog
 
 # Beer list 
