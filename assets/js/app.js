@@ -43,7 +43,6 @@ var impIpa = 0;
     }
     
     
-    
     var recommendBeer = function(){
     console.log(styleArray);
     var styleArray = [ale, sour,  redAle, stout, porter, ipa, saison, pilsner, cider, impIpa];
