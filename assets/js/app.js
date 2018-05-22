@@ -19,4 +19,5 @@ questionOne.addEventListener('click', testClick);
 
 function testClick(){
     console.log('clickyBoi');
+    questionOne.removeEventListener('click', testClick)
 }

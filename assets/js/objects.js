@@ -24,7 +24,7 @@ new BeerConstructor('Stoup', 'NW Red', 'Red Ale', 'https://www.beeradvocate.com/
 new BeerConstructor('Elysian', 'Dragons Tooth Stout', 'Stout', 'https://www.beeradvocate.com/beer/profile/700/2023/')
 new BeerConstructor('Wander Brewing', 'Global Mut', 'Porter', 'https://www.beeradvocate.com/beer/profile/34416/118914/')
 new BeerConstructor('Black Raven', 'Trickster IPA', 'IPA', 'https://www.beeradvocate.com/beer/profile/19765/50512/')
-new BeerConstructor('Holy Mountain Brewing', 'The Seer', 'Ale', 'https://www.beeradvocate.com/beer/profile/36949/140143/')
+new BeerConstructor('Holy Mountain Brewing', 'The Seer', 'Saison', 'https://www.beeradvocate.com/beer/profile/36949/140143/')
 new BeerConstructor('Icicle Brewing', 'Crosscut Pilsner', 'Pilsner', 'https://www.beeradvocate.com/beer/profile/25393/108953/')
 new BeerConstructor('Seattle Cider Company', 'Basil Mint Cider', 'Cider', 'https://www.seattlecidercompany.com/')
 new BeerConstructor('Pyramid Brewing', 'Outburst Imperial IPA', 'Imperial IPA', 'https://www.beeradvocate.com/beer/profile/403/57934/')
