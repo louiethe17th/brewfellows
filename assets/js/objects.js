@@ -6,7 +6,7 @@ var beerArray = [];
 
 
 //Beer constructor function
-function BeerConstructor(brewer, name, style, url){
+var BeerConstructor = function(brewer, name, style, url){
     this.brewer = brewer,
     this.name = name, 
     this.style = style,
@@ -16,7 +16,7 @@ function BeerConstructor(brewer, name, style, url){
 };
 
 
-
+function populateList(){
 //New beer objects
 new BeerConstructor('Georgetown brewing', 'Manny\'s pale ale', 'Ale', 'https://www.beeradvocate.com/beer/profile/4378/12645/')
 new BeerConstructor('Old Stove Brewing', 'Blackberry Sour', 'Sour', 'https://www.beeradvocate.com/beer/profile/45210/291795/')
@@ -28,3 +28,6 @@ new BeerConstructor('Holy Mountain Brewing', 'The Seer', 'Ale', 'https://www.bee
 new BeerConstructor('Icicle Brewing', 'Crosscut Pilsner', 'Pilsner', 'https://www.beeradvocate.com/beer/profile/25393/108953/')
 new BeerConstructor('Seattle Cider Company', 'Basil Mint Cider', 'Cider', 'https://www.seattlecidercompany.com/')
 new BeerConstructor('Pyramid Brewing', 'Outburst Imperial IPA', 'Imperial IPA', 'https://www.beeradvocate.com/beer/profile/403/57934/')
+
+}
+
