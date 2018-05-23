@@ -228,6 +228,7 @@ footer p {
 
 fieldset{
     text-align: center;
+
 }
 
 ul{
@@ -237,3 +238,17 @@ ul{
 li{
     margin: 15px auto;
 }
+
+.beerImg{
+    width: 150px;
+}
+
+form {
+    color: #05386B;
+    font-size: 1.3em;
+   line-height: 200%;
+   font-family: 'Nunito Sans', sans-serif;
+
+   
+}
+
