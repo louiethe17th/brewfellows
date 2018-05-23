@@ -29,7 +29,7 @@ var numberArray = [];
 var selectionIndex;
 
 // localStorage.setItem('localScores', JSON.stringify(styleArray));
-var renderBeerSelection = function() {
+var renderBeerSelection = function () {
     newBeerQuiz.innerHTML = '';
     var ulEl = document.getElementById('selection-results');
     var brewEl = document.createElement('li');
@@ -43,6 +43,7 @@ var renderBeerSelection = function() {
     urlEl.setAttribute('href', beerArray[selectionIndex].url)
     urlEl.setAttribute('target', '_blank');
     imgEl.src = beerArray[selectionIndex].img;
+    imgEl.className = 'beerImg';
     urlEl.innerHTML = 'Beer Advocates Review';
     ulEl.appendChild(imgEl);
     ulEl.appendChild(brewEl);
@@ -86,63 +87,110 @@ var recommendBeer = function () {
 }
 
 
-var questionOne = document.getElementById("yesAnswer1");
-var questionTwo = document.getElementById("yesAnswer2");
-var questionThree = document.getElementById("yesAnswer3");
-var questionFour = document.getElementById("yesAnswer4");
+var questionOneA = document.getElementById("answer1A");
+var questionOneB = document.getElementById("answer1B")
+var questionTwoA = document.getElementById("answer2A");
+var questionTwoB = document.getElementById("answer2B");
+var questionThreeA = document.getElementById("answer3A");
+var questionThreeB = document.getElementById("answer3B");
+var questionFourA = document.getElementById("answer4A");
+var questionFourB = document.getElementById("answer4B");
+var questionFourC = document.getElementById("answer4C");
 var questionFive = document.getElementById("yesAnswer5");
-var questionSix = document.getElementById("yesAnswer6");
-var questionSeven = document.getElementById("yesAnswer7");
+var questionSixA = document.getElementById("answer6A");
+var questionSixB = document.getElementById("answer6B");
+var questionSixC = document.getElementById("answer6C");
+var questionSevenA = document.getElementById("answer7A");
+var questionSevenB = document.getElementById("answer7B");
 var questionEight = document.getElementById("yesAnswer8");
 var questionOneNine = document.getElementById("yesAnswer9");
 
-questionFive.addEventListener('click', function(event){
+questionFive.addEventListener('click', function (event) {
     window.open('http://www.busch.com/')
+});
+
+questionSevenB.addEventListener('click', function (event) {
+    window.open('http://www.smirnoff.com/en-us/ice/smirnoff-ice/')
 });
 
 
 var button = document.getElementById("submitQuiz");
 
-button.addEventListener('click', function(event){
+button.addEventListener('click', function (event) {
 
     event.preventDefault();
-    
-    if (questionOne.checked == true) {
-        styleArray[5] += 3;
+
+    if (questionOneA.checked == true) {
+        styleArray[1] += 3;
         styleArray[8] += 2;
-        styleArray[7] += 1;
-        }
-
-    if (questionTwo.checked == true) {
-        styleArray[3] += 3;
-        styleArray[4] += 2;
         
     }
 
-    if (questionThree.checked == true) {
-        styleArray[3] += 3;
-        styleArray[4] += 2;
-        
-    }
-
-    if (questionFour.checked == true) {
-        styleArray[8] += 3;
-        styleArray[1] += 2;
-        styleArray[6] += 1;
-    }
-
-    if (questionSix.checked == true) {
+    if (questionOneB.checked == true) {
         styleArray[5] += 3;
-        styleArray[2] += 2;
-        styleArray[0] += 1;
+       
     }
 
-   
+    if (questionTwoA.checked == true) {
+        styleArray[3] += 3;
+        styleArray[4] += 2;
 
-    if (questionSeven.checked == true) {
-        styleArray[7] += 3;
-        styleArray[6] += 2;
-        styleArray[0] += 1;
+    }
+
+    if (questionTwoB.checked == true) {
+        styleArray[6] += 3;
+        styleArray[8] += 2;
+
+    }
+
+    if (questionThreeA.checked == true) {
+        styleArray[1] += 3;
+        styleArray[5] += 2;
+
+    }
+
+    if (questionThreeA.checked == true) {
+        styleArray[3] += 3;
+        styleArray[4] += 2;
+
+    }
+
+    if (questionFourA.checked == true) {
+        styleArray[1] += 3;
+       
+    }
+
+    if (questionFourB.checked == true) {
+        styleArray[5] += 3;
+        
+    }
+
+    if (questionFourC.checked == true) {
+        styleArray[9] += 3;
+        
+    }
+
+    if (questionSixA.checked == true) {
+        styleArray[5] += 3;
+       
+    }
+
+    if (questionSixB.checked == true) {
+        styleArray[0] += 3;
+       
+    }
+
+    if (questionSixC.checked == true) {
+        styleArray[4] += 3;
+       
+    }
+
+
+
+    if (questionSevenA.checked == true) {
+        styleArray[4] += 3;
+        styleArray[9] += 2;
+        styleArray[3] += 1;
     }
 
     if (questionEight.checked == true) {
@@ -156,7 +204,7 @@ button.addEventListener('click', function(event){
         styleArray[7] += 2;
         styleArray[5] += 1;
     }
-       
+
     recommendBeer();
 });
 
