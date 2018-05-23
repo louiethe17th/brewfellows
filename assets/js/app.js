@@ -26,8 +26,27 @@ var styleArray = [ale, sour, redAle, stout, porter, ipa, saison, pilsner, cider,
 
 var numberArray = [];
 
-// localStorage.setItem('localScores', JSON.stringify(styleArray));
+var selectionIndex;
 
+// localStorage.setItem('localScores', JSON.stringify(styleArray));
+var renderBeerSelection = function() {
+    newBeerQuiz.innerHTML = '';
+    var ulEl = document.getElementById('selection-results');
+    var brewEl = document.createElement('li');
+    var nameEl = document.createElement('li');
+    var styleEl = document.createElement('li');
+    var urlEl = document.createElement('a');
+    brewEl.textContent = beerArray[selectionIndex].brewer;
+    nameEl.textContent = beerArray[selectionIndex].name;
+    styleEl.textContent = beerArray[selectionIndex].style;
+    urlEl.setAttribute('href', beerArray[selectionIndex].url)
+    urlEl.setAttribute('target', '_blank');
+    urlEl.innerHTML = 'Beer Advocates Review';
+    ulEl.appendChild(brewEl);
+    ulEl.appendChild(nameEl);
+    ulEl.appendChild(styleEl);
+    ulEl.appendChild(urlEl);
+}
 
 //Check to see if beer list is already populated in local Storage
 if (localStorage.localBeerList) {
@@ -44,9 +63,6 @@ function getMaxOfArray(styleArray) {
 }
 
 
-
-
-
 var recommendBeer = function () {
     console.log(styleArray);
 
@@ -61,8 +77,9 @@ var recommendBeer = function () {
     console.log(indexOfMaxNumber);
     console.log(beerArray[indexOfMaxNumber]);
     numberArray = [];
+    selectionIndex = indexOfMaxNumber;
 
-
+    renderBeerSelection();
 }
 
 
@@ -136,12 +153,8 @@ button.addEventListener('click', function(event){
         styleArray[7] += 2;
         styleArray[5] += 1;
     }
-    
-    
-    
+       
     recommendBeer();
-
-
 });
 
 
