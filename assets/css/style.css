@@ -226,3 +226,14 @@ footer p {
  to {opacity: 1}
 }
 
+fieldset{
+    text-align: center;
+}
+
+ul{
+    text-align: center;
+}
+
+li{
+    margin: 15px auto;
+}

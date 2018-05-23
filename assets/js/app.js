@@ -36,12 +36,15 @@ var renderBeerSelection = function() {
     var nameEl = document.createElement('li');
     var styleEl = document.createElement('li');
     var urlEl = document.createElement('a');
+    var imgEl = document.createElement('img');
     brewEl.textContent = beerArray[selectionIndex].brewer;
     nameEl.textContent = beerArray[selectionIndex].name;
     styleEl.textContent = beerArray[selectionIndex].style;
     urlEl.setAttribute('href', beerArray[selectionIndex].url)
     urlEl.setAttribute('target', '_blank');
+    imgEl.src = beerArray[selectionIndex].img;
     urlEl.innerHTML = 'Beer Advocates Review';
+    ulEl.appendChild(imgEl);
     ulEl.appendChild(brewEl);
     ulEl.appendChild(nameEl);
     ulEl.appendChild(styleEl);
