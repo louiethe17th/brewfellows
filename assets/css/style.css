@@ -50,6 +50,7 @@ nav {
     border: none;
     font-size: 18px;
     color: #05386B;
+    
 }
 
 .menu-content {
@@ -224,3 +225,4 @@ footer p {
  from {opacity: .4}
  to {opacity: 1}
 }
+
