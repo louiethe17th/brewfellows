@@ -287,6 +287,8 @@ form {
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
     padding: 20px;
     width: 100%;
     background-color: #379683;
