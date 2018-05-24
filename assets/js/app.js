@@ -32,24 +32,28 @@ var selectionIndex;
 var renderBeerSelection = function () {
     newBeerQuiz.innerHTML = '';
     var ulEl = document.getElementById('selection-results');
-    var brewEl = document.createElement('li');
-    var nameEl = document.createElement('li');
-    var styleEl = document.createElement('li');
-    var urlEl = document.createElement('a');
     var imgEl = document.createElement('img');
+    var styleEl = document.createElement('li');
+    var brewEl = document.createElement('h4');
+    var nameEl = document.createElement('p');
+    var urlEl = document.createElement('a');
+    var restartEl = document.createElement('a');
     brewEl.textContent = beerArray[selectionIndex].brewer;
     nameEl.textContent = beerArray[selectionIndex].name;
     styleEl.textContent = beerArray[selectionIndex].style;
     urlEl.setAttribute('href', beerArray[selectionIndex].url)
     urlEl.setAttribute('target', '_blank');
+    restartEl.setAttribute('href', 'app.html');
     imgEl.src = beerArray[selectionIndex].img;
     imgEl.className = 'beerImg';
     urlEl.innerHTML = 'Beer Advocates Review';
+    restartEl.innerHTML = 'Restart Quiz';
     ulEl.appendChild(imgEl);
+    ulEl.appendChild(styleEl);
     ulEl.appendChild(brewEl);
     ulEl.appendChild(nameEl);
-    ulEl.appendChild(styleEl);
     ulEl.appendChild(urlEl);
+    ulEl.appendChild(restartEl);
 }
 
 //Check to see if beer list is already populated in local Storage
@@ -208,10 +212,4 @@ button.addEventListener('click', function (event) {
     recommendBeer();
 });
 
-// Restart button
 
-restartSurveyButton.addEventListener('click', restartButton);
-
-function restartButton(event) {
-    window.location.reload(true);
-}
