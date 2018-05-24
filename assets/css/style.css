@@ -48,7 +48,8 @@ li {
 }
 
 footer { 
-    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
     padding: 20px;
     width: 100%;
     background-color: #379683;
