@@ -281,7 +281,7 @@ form {
 
 .app-container {
     background-color: #8888;
-    height: 500px;
+    height: auto;
 }
 
 .question-title {
