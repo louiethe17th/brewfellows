@@ -286,4 +286,17 @@ form {
     margin-top: 10px;
     background-color: #EDF5E1;
     color: #05386B;
+
+    padding: 5px;
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #379683;
+    color: black;
+    text-align: center;
 }
