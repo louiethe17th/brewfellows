@@ -208,4 +208,10 @@ button.addEventListener('click', function (event) {
     recommendBeer();
 });
 
+// Restart button
 
+restartSurveyButton.addEventListener('click', restartButton);
+
+function restartButton(event) {
+    window.location.reload(true);
+}
