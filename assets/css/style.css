@@ -33,6 +33,16 @@ a {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+li {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .white {
     color: #EDF5E1;
 }
@@ -245,7 +255,7 @@ li{
 }
 
 .beerImg{
-    width: 150px;
+    max-width: 15%;
 }
 
 form {
@@ -293,4 +303,42 @@ footer {
     background-color: #379683;
     color: #EDF5E1;
     text-align: center;
+}
+
+/* about us styling */
+
+.about-container {
+    width: 75%;
+    height: 500px;
+    overflow: scroll;
+}
+
+.about-header {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.about-hero {
+    margin-top: 20px;
+}
+
+.person-container {
+    display: inline-block;
+    width: 40%;
+    height: 250px;
+    padding: 15px;
+}
+
+.position-left {
+    position: absolute;
+    left: 0;
+}
+
+.position-right {
+    position: absolute;
+    right: 0;
+}
+
+.small-logo {
+    width: 5%;
 }
