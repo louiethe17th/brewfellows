@@ -305,7 +305,7 @@ form {
 }
 
 #selection-results a {
-
+    cursor: pointer;
     margin: 2px;
 }
 
