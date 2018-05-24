@@ -87,7 +87,6 @@ nav {
 main {
     padding: 30px 0px;
     width: 75%;
-    height: 600px;
     margin: 0 auto;
 }
 
@@ -264,11 +263,27 @@ form {
     margin-bottom: 50px;
 }
 
+.app-container {
+    background-color: #8888;
+    height: 500px;
+}
+
 .question-title {
     font-size: 1.2em;
 }
 
 #newBeerQuiz button {
+    margin-top: 10px;
     background-color: #05386B;
-    padding: 5px;
+    color: #EDF5E1;
+    border: none;
+    padding: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+}
+
+#newBeerQuiz button:hover {
+    margin-top: 10px;
+    background-color: #EDF5E1;
+    color: #05386B;
 }
