@@ -33,6 +33,10 @@ a {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+.white {
+    color: #EDF5E1;
+}
+
 /* navbar */
 
 nav {
@@ -83,6 +87,7 @@ nav {
 main {
     padding: 30px 0px;
     width: 75%;
+    height: 600px;
     margin: 0 auto;
 }
 
@@ -138,93 +143,98 @@ footer p {
     text-align: center;
 }
 
-/* About Page CSS */
+/* Slideshow CSS */
 
-* {box-sizing:border-box}
+* {
+    box-sizing:border-box
+}
 
 .slideshow-container {
  
- max-width: 600px;
- position: relative;
- margin: auto;
+    max-width: 600px;
+    position: relative;
+    margin: 0 auto;
 }
 
 .slides {
-   display: none;
+    display: none;
 }
 
 .prev, .next {
- cursor: pointer;
- position: absolute;
- top: 50%;
- width: auto;
- margin-top: -22px;
- padding: 16px;
- color: white;
- font-weight: bold;
- font-size: 18px;
- transition: 0.6s ease;
- border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
 }
 
 .next {
- right: 0;
- border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 .prev:hover, .next:hover {
- background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
 }
 
 .text {
- color: #f2f2f2;
- font-size: 15px;
- padding: 8px 12px;
- position: absolute;
- bottom: 8px;
- width: 100%;
- text-align: center;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 .slide-number {
- color: #f2f2f2;
- font-size: 12px;
- padding: 8px 12px;
- position: absolute;
- top: 0;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .dot {
- cursor: pointer;
- height: 15px;
- width: 15px;
- margin: 0 2px;
- background-color: #bbb;
- border-radius: 50%;
- display: inline-block;
- transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #379683;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
- background-color: #717171;
+    background-color: #05386B;
 }
 
 .fade {
- -webkit-animation-name: fade;
- -webkit-animation-duration: 1.5s;
- animation-name: fade;
- animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
- from {opacity: .4}
- to {opacity: 1}
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 @keyframes fade {
- from {opacity: .4}
- to {opacity: 1}
+    from {opacity: .4}
+    to {opacity: 1}
 }
+
+/* app css */
 
 fieldset{
     text-align: center;
@@ -245,10 +255,20 @@ li{
 
 form {
     color: #05386B;
-    font-size: 1.3em;
-   line-height: 200%;
-   font-family: 'Nunito Sans', sans-serif;
-
-   
+    font-size: 1.1em;
+    line-height: 200%;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
+.app-header {
+    margin-bottom: 50px;
+}
+
+.question-title {
+    font-size: 1.2em;
+}
+
+#newBeerQuiz button {
+    background-color: #05386B;
+    padding: 5px;
+}
