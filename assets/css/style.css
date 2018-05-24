@@ -94,7 +94,7 @@ main img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 25%;
     animation: fadein 2s;
 }
 
@@ -282,12 +282,11 @@ form {
     margin-top: 10px;
     background-color: #EDF5E1;
     color: #05386B;
-
-    padding: 5px;
+    padding: 10px;
 }
 
-footer {
-    position: fixed;
+footer { 
+    position: absolute;
     bottom: 0;
     padding: 20px;
     width: 100%;
