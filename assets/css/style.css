@@ -33,8 +33,28 @@ a {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+li {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .white {
     color: #EDF5E1;
+}
+
+footer { 
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    background-color: #379683;
+    color: #EDF5E1;
+    text-align: center;
 }
 
 /* navbar */
@@ -124,7 +144,7 @@ main p {
 }
 
 main a {
-    margin-top: 5px;
+    margin-top: 10px;
     color: white;
     background-color: #05386B;
     padding: 5px;
@@ -138,7 +158,7 @@ main a:hover {
 }
 
 
-/* Slideshow CSS */
+/* Slide CSS */
 
 * {
     box-sizing:border-box
@@ -245,7 +265,7 @@ li{
 }
 
 .beerImg{
-    width: 150px;
+    max-width: 10%;
 }
 
 form {
@@ -282,15 +302,65 @@ form {
     margin-top: 10px;
     background-color: #EDF5E1;
     color: #05386B;
-    padding: 10px;
 }
 
-footer { 
-    position: absolute;
-    bottom: 0;
-    padding: 20px;
-    width: 100%;
-    background-color: #379683;
+#selection-results a {
+
+    margin: 2px;
+}
+
+#selection-results li {
+    font-family: 'Nunito Sans', sans-serif;
     color: #EDF5E1;
-    text-align: center;
+    font-size: 18px;
+}
+
+#selection-results h4 {
+    font-family: 'Fjalla one', Arial, Helvetica, sans-serif;
+    color: #05386B;
+    font-size: 24px;
+}
+
+#selection-results p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+/* about us styling */
+
+.about-container {
+    width: 75%;
+    height: 500px;
+    overflow: scroll;
+}
+
+.about-header {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.about-hero {
+    margin-top: 20px;
+}
+
+.person-container {
+    display: inline-block;
+    width: 40%;
+    height: 250px;
+    padding: 15px;
+}
+
+.position-left {
+    position: absolute;
+    left: 0;
+}
+
+.position-right {
+    position: absolute;
+    right: 0;
+}
+
+.small-logo {
+    width: 5%;
 }
